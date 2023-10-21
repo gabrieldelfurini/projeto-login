@@ -9,10 +9,19 @@
 */
 
 /* Variaveis  */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 :root{
     --roxo: #3F84E8;
     --verde-agua: #3FE894;
     --cor-fundo: #46D2DB;
+    --inputs: #C0E83F;
 }
 
 html{
@@ -24,9 +33,67 @@ html{
     width: 100vw;
 }
 section#login{
-    width: 250px;
+    width: 280px;
     height: 515px;
     background-color: white;
     border-radius: 20px;
+    overflow: hidden;
 }
 
+section#imagem{
+    background: black url(../imagens/pexels-emre-can-acer-2110951\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    height: 40%;
+    width: 100%;
+}
+
+section#formulario {
+    padding: 12px;
+}
+
+section#formulario > h1{
+    text-align: center;    
+    font-size: 1.5em;    
+}
+
+section#formulario > p{
+    margin: 10px 0px;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+div.campo{
+    display: block;
+    background-color:var(--cor-fundo);
+    height: 35px;
+    padding-left: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+    overflow: hidden;
+}
+
+input#iemail, input#isenha{
+    width: 80%;
+    height: 35px;
+    background-color: var(--roxo);
+    transform: translateX(3px);
+}
+
+div.campo {
+    margin-bottom: 3px;
+}
+
+input#botaoEnviar {
+    display: block;
+    width: 100%;
+    height: 33px;
+    margin-top: 15px;
+}
+
+input#botaoEnviar:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
