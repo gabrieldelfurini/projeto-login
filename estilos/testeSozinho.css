@@ -57,8 +57,8 @@ section#formulario > h1{
 }
 
 section#formulario > p{
-    margin: 10px 0px;
-    font-size: 0.8em;
+    margin: 6px 0px 10px 0px;
+    font-size: 0.9em;
     text-align: center;
 }
 
@@ -70,6 +70,11 @@ div.campo{
     border-radius: 5px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
     overflow: hidden;
+    margin-bottom: 3px;
+}
+
+input#iemail:focus-within, input#isenha:focus-within{
+    background-color: white;
 }
 
 input#iemail, input#isenha{
@@ -77,10 +82,8 @@ input#iemail, input#isenha{
     height: 35px;
     background-color: var(--roxo);
     transform: translateX(3px);
-}
-
-div.campo {
-    margin-bottom: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    border-radius: 0px 4px 4px 0px;
 }
 
 input#botaoEnviar {
@@ -88,12 +91,37 @@ input#botaoEnviar {
     width: 100%;
     height: 33px;
     margin-top: 15px;
+    background-color: var(--roxo);
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 1em;
 }
 
 input#botaoEnviar:hover {
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 3px;
+    background-color: white;
+    color: var(--roxo);
+    border: 1px solid var(--roxo);
     cursor: pointer;
+}
+
+
+#esqueciSenha{
+    display: block;
+    width: 100%;
+    height: 33px;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid var(--roxo);
+    border-radius: 2px;
+    padding-top: 3px;
+    background-color: white;
+    text-decoration: none;
+    color: var(--roxo);
+    transform: translate(-2px);
+}
+
+#esqueciSenha:hover{
+    background-color: var(--roxo);
+    color: white;
 }
