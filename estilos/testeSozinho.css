@@ -24,7 +24,7 @@
     --inputs: #C0E83F;
 }
 
-html{
+main{
     background-color: var(--cor-fundo);
     display: flex;
     justify-content: center;
@@ -32,6 +32,11 @@ html{
     height: 100vh;
     width: 100vw;
 }
+
+main{
+    width: 100%;
+}
+
 section#login{
     width: 280px;
     height: 515px;
